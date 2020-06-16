@@ -26,7 +26,8 @@ length = int(input("What is the length of the rectangle in inches?"))
 
 perimeter = (2 * height) + (2 * length)
 print "The perimeter is " + str(perimeter) + " inches"
-----------------------------------------------------------------------------------------------------------------------------------# 4 - The area of a rectangle is wh, where w and h are the lengths of its sides. Note that the multiplication operation is not shown explicitly in this formula. This is standard practice in mathematics, but not in programming. Write a Python statement that calculates and prints the area in square inches of a rectangle with sides 4 and 7 inches.
+----------------------------------------------------------------------------------------------------------------------------------
+# 4 - The area of a rectangle is wh, where w and h are the lengths of its sides. Note that the multiplication operation is not shown explicitly in this formula. This is standard practice in mathematics, but not in programming. Write a Python statement that calculates and prints the area in square inches of a rectangle with sides 4 and 7 inches.
 
 height = int(input("What is the height of the rectangle in inches?"))
 length = int(input("What is the length of the rectangle in inches?"))
@@ -43,5 +44,44 @@ circumference = 2 * pi * radius
 print "The circumference of the circle is " + str(circumference) + " inches"
 ----------------------------------------------------------------------------------------------------------------------------------
 # 6 - The area of a circle is πr^2, where r is the radius of the circle. Write a Python statement that calculates and prints the area of a circle in square inches whose radius is 8 inches.
+
+radius = float(input("What is the radius of the circle in inches?"))
+pi = 3.14
+
+area = pi * (radius ** 2)
+
+print "The area of the circle is " + str(area) + " inches."
+------------------------------------------------------------------------------------------------------------------------------------
+# 7 - Given p dollars, the future value of this money when compounded yearly at a rate of r percent interest for y years is 
+p(1 + 0.01r)^y. Write a Python statement that calculates and prints the value of $1,000 compounded at 7% interest for 10 years.
+
+initial_amount = float(input("How much money will you invest?"))
+years = float(input("For how long will you invest this money?"))
+interest_rate = float(input("What is the interest rate?"))
+
+future_value = initial_amount * (1 + 0.01 * interest_rate) ** years
+                                 
+print "The future value of your money is " + str(future_value)[:7] + " dollars."
+--------------------------------------------------------------------------------------------------------------------------------
+# 8 - Write a simple Python statement that combines the three strings "My name is", "Joe" and "Warren" into one larger string "My name is Joe Warren." and prints the result.
+
+string_1 = "My name is"
+string_2 = "Jorge"
+string_3 = "Gonzalez"
+
+print string_1, string_2, string_3
+
+# print "My name is " "Jorge" " Gonzalez." # alternative method
+------------------------------------------------------------------------------------------------------------------------------
+# 9 - Write a Python expression that combines the string "Joe Warren is 52 years old." from the string "Joe Warren" and the number 52 and prints the result. (hint: use the function str to convert the number into a string.)
+
+string_1 = "Jorge Gonzalez is "
+age = 23
+
+python_expression = string_1 + str(age)
+
+print python_expression
+---------------------------------------------------------------------------------------------------------------------------------
+# 10 - The distance between two points (x0, y0) and (x1, y1) is sqrt(x0 - x1)^2 + (y0 - y1)^2. Write a Python statement that calculates and prints the distance between the points (2, 2) and (5, 6)
 
 
