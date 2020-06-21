@@ -1,0 +1,93 @@
+# 1 - There are 5,280 feet in a mile. Write a Python statement that calculates and prints the number of feet in 13 miles.
+
+feet = 5280
+miles = 13
+
+print miles * feet
+----------------------------------------------------------------------------------------------------------------------------------------
+# 2 - Write a Python statement that calculates and prints the number of seconds in 7 hours, 21 minutes and 37 seconds.
+
+hours = 7
+minutes = 21
+seconds  = 37
+
+total_time = (hours * 60 * 60) + (minutes * 60) + seconds
+
+print total_time
+----------------------------------------------------------------------------------------------------------------------------------------
+# 3 - The perimeter of a rectangle is 2w + 2h where w and h are the lengths of its sides. Write a Python statement that calculates
+#     and prints the length in inches of the perimeter of a rectangle with sides of length 4 and 7 inches.
+
+width = 7
+height = 4
+
+perimeter = (2 * width) + (2 * height)
+
+print perimeter
+----------------------------------------------------------------------------------------------------------------------------------------
+# 4 - The area of a rectangle is wh, where w and h are the lengths of its sides. Note that the multiplication operation is not shown
+#     explicitly in this formula. This is stanard practice in mathematics, but not in programming. Write a Python statement that 
+#     calculates and prints the area in square inches of a rectangle with sides of length 4 and 7 inches.
+
+width = 7
+height = 4
+
+area = width * height
+print area
+----------------------------------------------------------------------------------------------------------------------------------------
+# 5 - The circumference of a circle is 2𝜋r where r is the radius of the circle. Write a Python statement that calculates and prints
+#     the circumference in inches of a circle whose radius is 8 inches. Assume that the constant 𝜋 = 3.14
+
+pi = 3.14
+radius = 8
+
+circumference = 2 * pi * radius
+
+print circumference
+----------------------------------------------------------------------------------------------------------------------------------------
+# 6 - The area of a circle is 𝜋r^2 where r is the radius of the circle. Write a Python statement that calculates and prints the area in
+#     square inches of a circle whose radius is 8 inches.
+
+pi = 3.14
+radius = 8
+
+area = pi * (radius ** 2)
+
+print area
+----------------------------------------------------------------------------------------------------------------------------------------
+# 7 - Given p dollars, the future value of this money when compunded yearly at a rate of r percent interest for y years is 
+#     p(1 + 0.01r)^y. Write a Python statement calculates and prints the value of 1,000 dollars compounded at 7 percent interest for
+#     10 years.
+
+initial_amount = 1000
+interest_rate = 7
+years = 10
+
+future_value = initial_amount * (1 + .01 * interest_rate) ** years
+
+print future_value
+----------------------------------------------------------------------------------------------------------------------------------------
+# 8 - Write a single Python statement that combines the three strings "My name is", "Joe" and "Warren" into one larger string "My name
+#     is Joe Warren." and prints the result.
+
+print "My name is " + "Joe " + "Warren."
+----------------------------------------------------------------------------------------------------------------------------------------
+# 9 - Write a Python statement that combines the string "Joe Warren is 52 years old." from the string "Joe Warren" and the number 52 and
+#     then prints the result.
+
+print "Joe Warren is " + str(52) + " years old."
+----------------------------------------------------------------------------------------------------------------------------------------
+# 10 - The distance between two points (x0, y0) and (x1, y1) is sqrt/(x0 - x1)^2 + (y0 - y1)^2. Write a Python statement that calculates
+#      and prints the distance between the points (2, 2) and (5, 6).
+
+from math import sqrt
+
+x0 = 2
+y0 = 2
+
+x1 = 5
+y1 = 6
+
+distance = sqrt(((x0 - x1) ** 2) + ((y0 - y1) ** 2))
+
+print distance
